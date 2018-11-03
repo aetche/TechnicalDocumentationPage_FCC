@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway');
+
+.container{
+	display: flex;
+	margin: 50px;
+	#navbar{
+		border-right: 2px solid #FFC107;
+		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
+		padding-right: 50px;
+		box-sizing: border-box;
+		flex:20%;
+		a{
+      font-size: 18px;
+			text-decoration: none;
+			padding: 5px;
+			margin: 5px 0;
+			text-transform: uppercase;
+      color:black;
+		}
+    a:nth-child(2){
+      margin-top: 25px;
+    }
+		a:nth-child(even){
+			background: #B2DFDB;
+		}
+
+		header{
+			h3{
+				padding: 12px 8px;
+				text-transform: uppercase;
+        background: #009688;
+        margin: 5px 0;
+        color: #B2DFDB;        
+        font-size: 18px;
+			}
+			p{
+				font-size: 16px;
+				padding: 8px;
+			}
+		}
+	}
+	#main-doc{
+		flex:80%;
+		h2{
+			font-size: 40px;
+			padding:50px;
+		}
+		section{
+			header{
+				color: #00796B;
+				padding: 20px 0;
+				font-size: 26px;
+				text-transform: uppercase;
+			}
+			article {
+				padding-bottom: 40px;
+				border-bottom: 1px solid grey;	
+				p{
+					padding: 10px 0;
+          font-size: 18px;
+				}
+        ul li{
+          font-size: 22px;
+          margin: 10px;
+          margin-left: 50px;
+          list-style-type: square;
+        }
+			}
+		}	
+	}
+	
+}
+
+h1,h2,h3{
+  font-family: 'Lora', serif;
+}
+p, li{
+  font-family: 'Raleway', sans-serif;  
+}
+
+@media (max-width: 480px) {
+  .container{
+    flex-direction: column;
+    margin: 5px;
+    #navbar{
+      border:none;
+      border-bottom: 1px solid grey;
+      flex-direction: row;
+      padding-right: 0;
+      justify-content: space-evenly;
+      header{
+        display: none;
+      } 
+      a:nth-child(2){
+        margin: 5px 0;
+      }
+    }
+    
+  }
+  #main-doc{
+    margin: 50px;
+    h2{
+      padding: 0 !important;
+    }
+  }
+}

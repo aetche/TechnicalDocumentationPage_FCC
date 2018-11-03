@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Raleway");
+.container {
+  display: flex;
+  margin: 50px; }
+  .container #navbar {
+    border-right: 2px solid #FFC107;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    box-sizing: border-box;
+    flex: 20%; }
+    .container #navbar a {
+      font-size: 18px;
+      text-decoration: none;
+      padding: 5px;
+      margin: 5px 0;
+      text-transform: uppercase;
+      color: black; }
+    .container #navbar a:nth-child(2) {
+      margin-top: 25px; }
+    .container #navbar a:nth-child(even) {
+      background: #B2DFDB; }
+    .container #navbar header h3 {
+      padding: 12px 8px;
+      text-transform: uppercase;
+      background: #009688;
+      margin: 5px 0;
+      color: #B2DFDB;
+      font-size: 18px; }
+    .container #navbar header p {
+      font-size: 16px;
+      padding: 8px; }
+  .container #main-doc {
+    flex: 80%; }
+    .container #main-doc h2 {
+      font-size: 40px;
+      padding: 50px; }
+    .container #main-doc section header {
+      color: #00796B;
+      padding: 20px 0;
+      font-size: 26px;
+      text-transform: uppercase; }
+    .container #main-doc section article {
+      padding-bottom: 40px;
+      border-bottom: 1px solid grey; }
+      .container #main-doc section article p {
+        padding: 10px 0;
+        font-size: 18px; }
+      .container #main-doc section article ul li {
+        font-size: 22px;
+        margin: 10px;
+        margin-left: 50px;
+        list-style-type: square; }
+
+h1, h2, h3 {
+  font-family: 'Lora', serif; }
+
+p, li {
+  font-family: 'Raleway', sans-serif; }
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    margin: 5px; }
+    .container #navbar {
+      border: none;
+      border-bottom: 1px solid grey;
+      flex-direction: row;
+      padding-right: 0;
+      justify-content: space-evenly; }
+      .container #navbar header {
+        display: none; }
+      .container #navbar a:nth-child(2) {
+        margin: 5px 0; }
+
+  #main-doc {
+    margin: 50px; }
+    #main-doc h2 {
+      padding: 0 !important; } }
+
+/*# sourceMappingURL=style.css.map */
